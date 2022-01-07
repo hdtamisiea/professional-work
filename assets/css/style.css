@@ -1,7 +1,9 @@
 :root {
-    --primary-color: #b6ecf1;
-    --secondary-color: #024e76;
-    --tertiary-color: #551a8b;    
+    --red: #070101ea;
+    --gray: #ececf1e3;
+    --black: #000000;  
+    --yellow: #fceb07;
+      
 }
 
 * {
@@ -12,7 +14,7 @@
 
 header {
     padding: 20px 35px 20px 0;
-    background-color: var(--tertiary-color);
+    background-color: var(--yellow);
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
@@ -29,14 +31,19 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--tertiary-color);
+    color: var(--yellow);
     margin: 0;
-    background-color: var(--primary-color);
+    background-color: var(--black);
     padding: 20px;
     width: 40%;
     margin: 0;
     border: none;
     text-align: end;  
+    background-attachment: fixed;
+}
+
+header h1 a:visited {
+    color: var(--yellow);
 }
 
 header a {
@@ -53,8 +60,6 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    border-bottom: #b6ecf1 solid 2px;
-    padding-bottom: 5px;
 }
 
 
@@ -62,10 +67,8 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    color: var(--primary-color);
-    border-bottom: #b6ecf1 solid 2px;
-    padding-bottom: 5px;
-    border-spacing: inherit;
+    color: var(----red);
+    text-decoration: underline;
 }
 
 
@@ -73,6 +76,7 @@ header nav ul li a {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--primary-color);
+    color: var(--black);
+    background-color: var(--gray);
     
 }
