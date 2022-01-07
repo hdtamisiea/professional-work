@@ -71,7 +71,15 @@ header nav ul li a {
     text-decoration: underline;
 }
 
-
+.hero {
+    background-image: url("..professional-work/assets/images/hp-image.jpg");
+    background-color: var(--yellow);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
 
 body {
