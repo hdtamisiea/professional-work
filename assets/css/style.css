@@ -226,7 +226,7 @@ display: inline-flex;
     margin:7px;
     background-color: var(--yellow);
     height: 450px;
-    width:100%;
+    width:95%;
     background-size: cover;
     background-position: center;
     display: flex;
