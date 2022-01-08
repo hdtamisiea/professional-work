@@ -2,7 +2,7 @@
     --red: #070101ea;
     --gray: #ececf1e3;
     --black: #000000;  
-    --yellow: #fceb07;
+    --yellow: #f1d177;
       
 }
 
@@ -72,13 +72,16 @@ header nav ul li a {
 }
 
 .hero {
-    background-image: url("..professional-work/assets/images/hp-image.jpg");
+    background-image: url("../images/birch.jpg");
     background-color: var(--yellow);
     height: 250px;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+
 }
 
 
