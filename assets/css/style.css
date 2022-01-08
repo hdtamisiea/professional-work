@@ -1,13 +1,12 @@
+/* color variables for easier use */
 :root {
-    --red: #070101ea;
     --gray: #ececf1e3;
     --black: #000000;  
     --yellow: #f1d177;
-    --purple: #581c58;
-    --lt-purple: #ec7eec;    
+    --purple: #581c58; 
 }
 
-
+/* set default for page */
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,7 @@ body {
     background-color: var(--gray);
 }
 
+/* header styling */
 header {
     padding: 20px 35px 20px 0;
     background-color: var(--yellow);
@@ -52,7 +52,6 @@ header h1 a:visited {
     color: var(--yellow);
 }
 
-/* see what happens if you remove */
 header a {
     text-decoration: none;
 }
@@ -67,7 +66,6 @@ header nav {
     flex-wrap: wrap;
     list-style: none;
 }
-
 
 header nav a {
     padding: 10px 15px;
@@ -85,6 +83,7 @@ header nav a:hover {
     text-shadow: none;
 }
 
+/* hero styling */
 .hero {
     background-image: url("../images/birch.jpg");
     background-color: var(--yellow);
@@ -122,9 +121,6 @@ header nav a:hover {
 }
 
 
-
-
-
 main {
     max-width: 88%;
     margin: 20px auto 40px auto;
@@ -132,11 +128,12 @@ main {
     display: inline;
     flex-wrap: wrap;
     flex-direction: row;
-    
 }
 
 /* this includes the 3 headings and the about me text */
 .page-section {
+    
+
     
     
     
@@ -147,12 +144,11 @@ main {
 .page-section > h2 {
     text-align: right;
     border-right: var(--purple) solid 5px;
-    padding: 10px 20px 10px 6%;
+    padding-right: 40px;
     font-size: 32px;
-    
-
-    
-
+    min-height: 100%;
+    min-width: 20%;
+    max-width: 20%;
 }
 
 .page-section div {
@@ -162,7 +158,10 @@ main {
 }
 
 .page-section p {
-
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
 }
 
 
@@ -171,10 +170,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    
 }
 
 .work-text {
-display: inline-flex;
+
+
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
 }
 
 .work-text:first-child {
@@ -183,7 +194,7 @@ display: inline-flex;
 }
 
 .work-text:hover {
-
+    opacity: 1.0;
 }
 
 .work-text div {
