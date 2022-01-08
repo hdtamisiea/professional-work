@@ -21,23 +21,22 @@
 
         <!-- Navigation -->
         <nav>
-            <ul>
-                <li>
-                    <a href="#about">About Me</a>
-                </li>
 
-                <li>
-                    <a href="#work">Work</a>
-                </li>
+            <a href="#about">About Me</a>
 
-                <li>
-                    <a href="#contact">Contact Me</a>
-                </li>
 
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
+
+            <a href="#work">Work</a>
+
+
+
+            <a href="#contact">Contact Me</a>
+
+
+
+            <a href="#resume">Resume</a>
+
+
         </nav>
     </header>
 
@@ -45,21 +44,22 @@
     <section class="hero">
 
         <!--Include image of me in the Hero-->
-        <div class="mypic">
-            <img src="./assets/images/Heather.jpg" alt="Picture of me!" height=200 width=175>
-        </div>
+
+        <img src="./assets/images/Heather.jpg" alt="Picture of me!" height=200 width=175 />
+
 
         <!--Include a quote in the Hero-->
-        <h2 class="quote">"It is never too late to be what you might have been."</h2>
-
+        <div>
+            <h2>"It is never too late to be what you might have been."</h2>
+        </div>
 
     </section>
 
     <!--Begin Main Section-->
-    <main class="main">
+    <main>
 
         <!--About Me Section-->
-        <section id="about" class="larger-section">
+        <section id="about" class="page-section">
             <h2 class="side-title">About Me</h2>
             <div class="about-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ad rem eum quos, aut expedita,
@@ -69,43 +69,55 @@
         </section>
 
         <!--Links to Work-->
-        <section id="work">
-            <h2 class="side-title">Work</h2>
+        <section id="work" class="page-section">
+            <h2>Work</h2>
+            <div class="work-container">
 
-            <!--Link to latest project-->
-            <div id="work1">
-                <h4>Run Buddy</h4>
-                <a class="work-text" href="https://hdtamisiea.github.io/run-buddy/">Visit</a>
-                <p>HTML/CSS</p>
-            </div>
+                <!--Link to latest project-->
+                <a href="https://hdtamisiea.github.io/run-buddy/" class="work-text run-buddy">
+                    <div>
+                        <h4>Run Buddy</h4>
+                        <span>HTML/CSS</span>
+                    </div>
+                </a>
 
-            <!--Links to four other projects-->
-            <div class="other-work">
-                <div id="work2">
-                    <h4>Surf Report</h4>
-                    <p>Mern Stack</p>
-                </div>
 
-                <div id="work3">
-                    <h4>LED Wall</h4>
-                    <p>Node/iOT</p>
-                </div>
+                <!--Links to four other projects-->
+                <a href="https://magicseaweed.com/Daytona-Beach-Surf-Report/670/" class="work-text surf">
+                    <div>
+                        <h4>Surf Report</h4>
+                        <p>Mern Stack</p>
+                    </div>
+                </a>
 
-                <div id="work4">
-                    <h4>Calculator</h4>
-                    <p>React/Javascript/CSS</p>
-                </div>
+                <a href="https://taggbox.com/display/?utm_source=google&utm_medium=cpc&utm_campaign=taggbox_display&gclid=Cj0KCQiAieWOBhCYARIsANcOw0xfAGIsWtOHTvH0ijdt6J7pia0bTboa3tvahkP09k2GMK2KcSzo5ScaAhtIEALw_wcB" class="work-text led">
+                    <div>
+                        <h4>LED Wall</h4>
+                        <p>Node/iOT</p>
+                    </div>
+                </a>
 
-                <div id="work5">
-                    <h4>Pastel Puzzles</h4>
-                    <p>MERN Stack</p>
-                </div>
+                <a href="https://www.online-calculator.com/" class="work-text calc">
+                    <div>
+                        <h4>Calculator</h4>
+                        <p>React/Javawscript/CSS</p>
+                    </div>
+                </a>
+
+                <a href="https://fineartamerica.com/shop/puzzles/soft+pastel" class="work-text pastel">
+                    <div>
+                        <h4>Pastel Puzzles</h4>
+                        <p>MERN/Stack</p>
+                    </div>
+                </a>
+
+
             </div>
         </section>
 
 
 
-        <section id="contact">
+        <section id="contact" class="page-section">
 
             <h2 class="side-title">Contact Me</h2>
 

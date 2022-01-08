@@ -4,9 +4,7 @@
     --black: #000000;  
     --yellow: #f1d177;
     --purple: #581c58;
-    --lt-purple: #ec7eec;
-    
-      
+    --lt-purple: #ec7eec;    
 }
 
 
@@ -16,10 +14,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    background-color: var(--gray);
+}
+
 header {
     padding: 20px 35px 20px 0;
     background-color: var(--yellow);
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -34,22 +40,19 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 46px;
+    /* 4vw means viewing width - will adj for size of screen */
+    font-size: 4vw;
     color: var(--yellow);
     margin: 0;
     background-color: var(--purple);
-    padding: 20px;
-    width: 40%;
-    margin: 0;
-    border: none;
-    text-align: end;  
-    background-attachment: fixed;
+    padding: 5px 1% 5px 6%;
 }
 
 header h1 a:visited {
     color: var(--yellow);
 }
 
+/* see what happens if you remove */
 header a {
     text-decoration: none;
 }
@@ -58,25 +61,26 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul {
+header nav {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
 
-header nav ul li a {
+header nav a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.4rem;
     color: var(--purple);
     text-decoration: underline;
+    transition: all 0.25s ease-in;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
     background: var(--purple);
+    background-size: 100% 100%;
     color: var(--yellow);
     text-shadow: none;
 }
@@ -98,56 +102,100 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-.quote {
-  margin-right: 2%;
-  color: var(--purple);
-  background-color: var(--yellow);
-  flex-wrap: wrap;
-}
-
-img {
+.hero img {
     padding: 0;
     border: var(--purple) solid 5px;
-    margin-left: 50%;
+    margin-left: 2%;
+    
+}
+
+.hero div {
+    flex: 0 0 50%;
+}
+
+.hero h2 {
+  margin-right: 0;
+  padding: 5px 10px;
+  color: var(--purple);
+  background-color: var(--yellow);
+  display: inline;
 }
 
 
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--black);
-    background-color: var(--gray);
-}
-
-
-
-.main {
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: stretch;
-    padding: 60px;
-}
 
 
 
 main {
+    max-width: 88%;
+    margin: 20px auto 40px auto;
     color: var(--purple);
+    display: inline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+/* this includes the 3 headings and the about me text */
+.page-section {
+    
+    
+    
 
 }
 
-.side-title {
-    font-size: 36px;
-    flex 1 30%;
+/* this only effects the headings and the area's around them */
+.page-section > h2 {
+    text-align: right;
+    border-right: var(--purple) solid 5px;
+    padding: 10px 20px 10px 6%;
+    font-size: 32px;
+    
+
+    
+
+}
+
+.page-section div {
+    flex: 0 0 77%;
+
+
+}
+
+.page-section p {
+
+}
+
+
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .work-text {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+display: inline-flex;
 }
 
-#work1 {
+.work-text:first-child {
+
+
+}
+
+.work-text:hover {
+
+}
+
+.work-text div {
+
+}
+
+.work-text h4 {
+
+}
+
+
+#work1, .other-work {
     background-image: url("../images/hero-bg.jpg");
     display: flex;
     background-size: cover;
@@ -156,4 +204,60 @@ main {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    
+    
 }
+
+#about, #work, #contact {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: stretch;
+    padding: 60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-right: var(--purple) 5px solid;
+    height: auto;
+} 
+
+
+
+.run-buddy {
+    background-image: url("../images/hero-bg.jpg");
+    margin:7px;
+    background-color: var(--yellow);
+    height: 450px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.surf {
+    background-image: url("../images/pastel.jpg");
+}
+
+.led {
+    background-image: url("../images/led.jpg");
+}
+
+.calc {
+    background-image: url("../images/calc.jpg")
+}
+
+.pastel {
+    background-image: url("../images/pastel.jpg")
+}
+
+/* media queries */
+
+
+
+
+
