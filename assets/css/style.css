@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--purple)
 }
 
 body {
@@ -54,10 +55,6 @@ header h1 a:visited {
 
 header a {
     text-decoration: none;
-}
-
-header nav {
-    margin: 7px 0;
 }
 
 header nav {
@@ -119,15 +116,6 @@ header nav a:hover {
   display: inline;
 }
 
-main {
-    max-width: 88%;
-    margin: 20px auto 40px auto;
-    color: var(--purple);
-    display: inline;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 /* this includes the 3 headings and the about me text */
 .page-section {
     
@@ -147,6 +135,7 @@ main {
     min-height: 100%;
     min-width: 20%;
     max-width: 20%;
+    
 }
 
 .page-section div {
@@ -157,28 +146,26 @@ main {
     font-size: 20px;
     padding: 0 30px;
     line-height: 1.6;
-    width: 90%;
+    
 }
 
-.work-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
-}
+
 
 .work-text {
-    text-align: center;
-    border: solid;
-    color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
+    text-align: center;
+    border: solid white 5px;
     text-decoration: none;
     background-size: cover;
     background-position: center;
     opacity: 0.5;
     
+   
+    
 }
+
 
 .work-text:first-child {
 
@@ -190,14 +177,13 @@ main {
 }
 
 .work-text div {
-    color: red;
-    margin-right: 0;
+    display: flex;
     padding: 5px;
     color: var(--purple);
     background-color: var(--yellow);
-    display: inline;
+   
     margin: 10%;
-    text-align: left;
+    text-align: center;
 }
 
 .work-text h4 {
@@ -205,16 +191,27 @@ main {
 font-weight: bold;
 }
 
+/* This effects the 4 containers - justify content R moves all to right margin*/
+ .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 20%;
+    
+    
+}
+
 #about, #work, #contact {
     display: flex;
     flex-flow: nowrap column;
-    justify-content: stretch;
+    justify-content: center;
     padding: 60px;
     flex-wrap: wrap;
     flex-direction: row;
-    border-right: var(--purple) 5px solid;
     height: auto;
 } 
+
+
 
 .run-buddy {
     background-image: url("../images/hero-bg.jpg");
