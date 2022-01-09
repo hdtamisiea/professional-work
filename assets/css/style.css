@@ -54,13 +54,14 @@ header h1 a:visited {
     color: var(--yellow);
 }
 
-
+/* navigation styling */
 header nav {
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
 }
 
+/* navigation text styling */
 header nav a {
     padding: 10px 15px;
     font-weight: lighter;
@@ -70,6 +71,7 @@ header nav a {
     transition: all 0.25s ease-in;
 }
 
+/* reactive to hover */
 header nav a:hover {
     background: var(--purple);
     background-size: 100% 100%;
@@ -113,12 +115,13 @@ header nav a:hover {
   display: inline;
 }
 
+/* overall main section styling */
 main {
     margin: 20px auto 40px auto;
     max-width: 88%;
 }
 
-/* this includes the 3 headings and the about me text */
+/* begin styling of main page */
 .page-section {
     margin: 25px 0;
     padding: 10px 0;
@@ -129,7 +132,6 @@ main {
     align-items: stretch;
 }
 
-/* this only effects the headings and the area's around them */
 .page-section > h2 {
     flex: 0 0 20%;
     text-align: right;
@@ -149,13 +151,16 @@ main {
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: justify;
+    
 }
 
+/* begin styling of work section */
 .work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .work-text {
     display: flex;
     background-color: var(--purple);
@@ -173,11 +178,13 @@ main {
     font-size: 0.5rem;
 }
 
+/* make first work box larger */
 .work-text:first-child {
     min-height: 400px;
     flex-basis: 100%;
 }
 
+/* make each work box reactive to hover */
 .work-text:hover {
     opacity: 1.0;
 }
@@ -189,30 +196,18 @@ main {
   
 }
 
+/* make name of link larger */
 .work-text h4 {
     font-size: 1.6rem;
     font-weight: bold;
 }
 
-/* This effects the 4 containers - justify content R moves all to right margin*/
  .work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: 20%;    
 }
-
-#about, #work, #contact {
-    display: flex;
-    padding: 10px;
-    flex-flow: nowrap column;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: auto;
-} 
-
-
 
 .run-buddy {
     background-image: url("../images/hero-bg.jpg");
@@ -231,6 +226,7 @@ main {
     font-size: 18px; */
 }
 
+/* background images for work boxes */
 .surf {
     background-image: url("../images/surf.jpg");
 }
@@ -247,6 +243,7 @@ main {
     background-image: url("../images/refactor.jpg");
 }
 
+/* begin footer styling */
 .contact-links {
     list-style: none;
     display: flex;
@@ -258,44 +255,19 @@ main {
     padding: 8px;   
 }
 
-
 /* media queries */
 
-@media screen and (max-width: 980px) {
-           
-   
-}
-
 @media screen and (max-width: 768px) {
-header nav a {
-    /* margin-left: 20%; */
-    /* font-size: 7vw; */
-}
-
    .page-section > h2 {
        font-size: 4vw;
-   }
-
-   .contact-links {
-       /* font-size: 4vw; */
    }
 }
 
 @media screen and (max-width: 575px) {  
-    header nav {
-        /* margin-left: 20%;
-        font-size: 4vw; */
-    }
-
-    .contact-links {
+       .contact-links {
         font-size: 3vw;
     }
 }
 
-@media screen and (max-width 430px){
-    .page-section > h2 {
-        border-bottom: var(--purple) solid 5px;
-        border-right: none;
-    }
-}
+
 
