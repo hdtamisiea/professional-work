@@ -58,7 +58,6 @@ header a {
 }
 
 header nav {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
@@ -130,7 +129,7 @@ header nav a:hover {
 .page-section > h2 {
     text-align: center;
     border-right: var(--purple) solid 5px;
-    padding-right: 40px;
+    padding-right: 80px;
     font-size: 32px;
     min-height: 100%;
     min-width: 20%;
@@ -257,38 +256,18 @@ font-weight: bold;
 /* media queries */
 
 @media screen and (max-width: 980px) {
-    /*header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }*/
-    
-    /*header h1 {
-        width: 100%;
-        text-align: center;
-    }*/
-       
-    header nav a {
-        margin-top: 20px;
-        width: 100%;
-        /*justify-content: center;*/
-        font-size: 20px;
-    }
-       
-    .hero-img, .hero div {
-        width: 100%
-
-    }
+           
+   
 }
 
-.@media screen and (max-width: 768px) {
-    .page-section > h2 {
-        font-size: 24px;
-    }
+@media screen and (max-width: 768px) {
+   .page-section > h2 {
+       font-size: 4vw;
+   }
 
-    .contact-links {
-        font-size: 20px;
-    }
+   .contact-links {
+       font-size: 4vw;
+   }
 }
 
 
