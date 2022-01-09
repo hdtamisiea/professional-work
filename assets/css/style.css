@@ -151,7 +151,6 @@ main {
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: justify;
-    
 }
 
 /* begin styling of work section */
@@ -193,7 +192,6 @@ main {
     padding: 8px 10px;
     color: var(--purple);
     background-color: var(--yellow);
-  
 }
 
 /* make name of link larger */
@@ -209,24 +207,11 @@ main {
     flex-basis: 20%;    
 }
 
+/* background images for work boxes */
 .run-buddy {
     background-image: url("../images/hero-bg.jpg");
-    /* margin:7px;
-    background-color: var(--yellow);
-    height: 450px;
-    width:95%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: center;
-    position: relative;
-    font-size: 18px; */
 }
 
-/* background images for work boxes */
 .surf {
     background-image: url("../images/surf.jpg");
 }
