@@ -128,7 +128,7 @@ header nav a:hover {
 
 /* this only effects the headings and the area's around them */
 .page-section > h2 {
-    text-align: right;
+    text-align: center;
     border-right: var(--purple) solid 5px;
     padding-right: 40px;
     font-size: 32px;
@@ -146,11 +146,12 @@ header nav a:hover {
     font-size: 20px;
     padding: 0 30px;
     line-height: 1.6;
+    text-align: justify;
     
 }
 
 
-
+/* This seems to only effect run buddy box */
 .work-text {
     display: flex;
     justify-content: center;
@@ -161,6 +162,7 @@ header nav a:hover {
     background-size: cover;
     background-position: center;
     opacity: 0.5;
+    flex-basis: 90%;
     
    
     
@@ -181,13 +183,11 @@ header nav a:hover {
     padding: 5px;
     color: var(--purple);
     background-color: var(--yellow);
-   
-    margin: 10%;
+    margin: 10% auto;
     text-align: center;
 }
 
 .work-text h4 {
-
 font-weight: bold;
 }
 
@@ -203,9 +203,9 @@ font-weight: bold;
 
 #about, #work, #contact {
     display: flex;
+    padding: 60px;
     flex-flow: nowrap column;
     justify-content: center;
-    padding: 60px;
     flex-wrap: wrap;
     flex-direction: row;
     height: auto;
@@ -228,7 +228,6 @@ font-weight: bold;
     align-content: center;
     position: relative;
     font-size: 18px;
-    font-weight: bold;
 }
 
 .surf {
