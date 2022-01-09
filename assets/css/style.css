@@ -14,6 +14,7 @@
     color: var(--purple)
 }
 
+/* set overall body style */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--black);
@@ -41,7 +42,6 @@ header {
 
 header h1 {
     font-weight: bold;
-    /* 4vw means viewing width - will adj for size of screen */
     font-size: 4vw;
     color: var(--yellow);
     margin: 0;
@@ -49,13 +49,11 @@ header h1 {
     padding: 5px 1% 5px 6%;
 }
 
+/* remove text color change for visited link */
 header h1 a:visited {
     color: var(--yellow);
 }
 
-header a {
-    text-decoration: none;
-}
 
 header nav {
     flex-direction: row;
@@ -115,26 +113,30 @@ header nav a:hover {
   display: inline;
 }
 
+main {
+    margin: 20px auto 40px auto;
+    max-width: 88%;
+}
+
 /* this includes the 3 headings and the about me text */
 .page-section {
-    
-
-    
-    
-    
-
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 /* this only effects the headings and the area's around them */
 .page-section > h2 {
-    text-align: center;
-    border-right: var(--purple) solid 5px;
-    padding-right: 80px;
-    font-size: 32px;
-    min-height: 100%;
-    min-width: 20%;
-    max-width: 20%;
-    
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 5px solid var(--purple);
+    padding-right: 15px;
+    font-size: 4vw;
+    line-height: 1.1; 
 }
 
 .page-section div {
@@ -145,28 +147,35 @@ header nav a:hover {
     font-size: 20px;
     padding: 0 30px;
     line-height: 1.6;
+    margin-bottom: 20px;
     text-align: justify;
-    
 }
 
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .work-text {
     display: flex;
-    justify-content: center;
+    background-color: var(--purple);
+    min-height: 150px;
+    max-height: 150px;
     align-items: flex-end;
-    text-align: center;
-    border: solid white 5px;
+    border: 5px solid white;
     text-decoration: none;
-    background-size: cover;
-    background-position: center;
+    background-size: 150%;
+    background-position: center; 
     opacity: 0.5;
-    flex-basis: 90%;
-    margin: 10px;
+    flex-basis: calc(50% - 1em);
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    font-size: 0.5rem;
 }
 
-
 .work-text:first-child {
-
-
+    min-height: 400px;
+    flex-basis: 100%;
 }
 
 .work-text:hover {
@@ -174,16 +183,15 @@ header nav a:hover {
 }
 
 .work-text div {
-    display: flex;
-    padding: 5px;
+    padding: 8px 10px;
     color: var(--purple);
     background-color: var(--yellow);
-    margin: 10% auto;
-    text-align: center;
+  
 }
 
 .work-text h4 {
-font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 /* This effects the 4 containers - justify content R moves all to right margin*/
@@ -208,7 +216,7 @@ font-weight: bold;
 
 .run-buddy {
     background-image: url("../images/hero-bg.jpg");
-    margin:7px;
+    /* margin:7px;
     background-color: var(--yellow);
     height: 450px;
     width:95%;
@@ -220,7 +228,7 @@ font-weight: bold;
     justify-content: space-between;
     align-content: center;
     position: relative;
-    font-size: 18px;
+    font-size: 18px; */
 }
 
 .surf {
@@ -259,16 +267,26 @@ font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
+header nav a {
+    /* margin-left: 20%; */
+    /* font-size: 7vw; */
+}
+
    .page-section > h2 {
        font-size: 4vw;
    }
 
    .contact-links {
-       font-size: 4vw;
+       /* font-size: 4vw; */
    }
 }
 
-@media screen and (max-width: 575px) {    
+@media screen and (max-width: 575px) {  
+    header nav {
+        /* margin-left: 20%;
+        font-size: 4vw; */
+    }
+
     .contact-links {
         font-size: 3vw;
     }
