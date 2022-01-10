@@ -158,7 +158,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-basis: 20%;   
+    flex: 0 0 77%;
 }
 
 .work-text {
