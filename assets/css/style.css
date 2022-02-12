@@ -24,6 +24,7 @@ body {
 /* header styling */
 header {
     padding: 20px 35px 20px 0;
+    /* background-color: linear-gradient(--yellow, #fcba04); */
     background-color: var(--yellow);
     justify-content: space-between;
     flex-direction: row;
@@ -203,23 +204,23 @@ main {
 
 /* background images for work boxes */
 .run-buddy {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/quiz.jpg");
 }
 
 .surf {
-    background-image: url("../images/surf.jpg");
+    background-image: url("../images/table_with_food_top_view_900x700.jpg");
 }
 
 .led {
-    background-image: url("../images/led.jpg");   
+    background-image: url("../images/weather.jpg");   
 }
 
 .robot {
-    background-image: url("../images/robot.jpg");   
+    background-image: url("../images/letters1.jpg");   
 }
 
 .refactor {
-    background-image: url("../images/refactor.jpg");
+    background-image: url("../images/work.jpg");
 }
 
 /* begin footer styling */
